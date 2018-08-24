@@ -56,8 +56,8 @@ def turn_count(board)
 end
 
 def current_player(board)
-  return "X" if turn_count(board) % 2 == 0
-  return "O"
+  "X" if turn_count(board) % 2 == 0
+  "O"
 end
 
  def won?(board) #return false if there are no winning combinations
