@@ -48,7 +48,7 @@ end
 def turn_count(board)
   occupied_spaces = 0 
   board.each do |space|
-    if position_taken?(board, space)
+    if (space != "" && space != " ")
       occupied_spaces +=1
     end
   end
