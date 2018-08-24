@@ -34,18 +34,6 @@ def valid_move?(board, index)
   index.between?(0,8) && !position_taken?(board, index)
 end
 
-# def turn(board)
-#   puts "Please enter 1-9:"
-#   choice = input_to_index(gets.strip())
-#   if (valid_move?(board, choice))
-#     move(board, choice, "X")
-#     puts display_board(board)
-#   else
-#     puts "Invalid choice!"
-#     turn(board)
-#   end
-# end
-
 def turn(board)
   puts "Please enter 1-9:"
   choice = input_to_index(gets.strip())
